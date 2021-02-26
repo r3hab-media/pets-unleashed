@@ -141,6 +141,48 @@ a {
   border-radius: 3px;
 }
 
+/* text colors */
+.text-light {
+  color: var(--gray-1);
+}
+
+/* background colors */
+.bg-orange {
+  background: var(--orange);
+  color: var(--gray-1);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.btn-medium {
+  padding: 0.375rem 0.75rem;
+}
+.btn-small {
+  padding: 0.175rem 0.25rem;
+}
+
+.collapse-footer {
+  display: flex;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 /* Tablet menu */
 @media all and (min-width: 700px) {
   .menu {
@@ -265,11 +307,45 @@ footer {
 	padding: 1em 3em;
 }
 
+/* collapsible */
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.collapse.show {
+  max-height: 99em;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.block {
+  margin-top: 10px;
+  background: #f5f5f5;
+  padding: 0;
+}
+.block__content {
+  border: 1px solid #ccc;
+  padding: 1.5em;
+  height: 100%;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 /* 320px Media Query */
 @media (min-width: 320px) {
+  .location-box {
+    width: 100%;
+    background: var(--orange);
+    height: 4em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
 	/* boxes */
 	.boxes {
 		display: flex;

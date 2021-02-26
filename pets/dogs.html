@@ -15,12 +15,66 @@
 			<h4 class="sub-title">(or <span id="redirect"></span>)</h4>
 			<h4 class="sub-title">Our current breeds:</h4>
 			<p class="dogs"></p>
+
+			<!-- get pricing -->
+			<button class="btn btn-small btn__first" data-toggle="collapse" data-target=".collapse.first" data-text="Collapse">Get Pricing</button>
+			<div class="block collapse first">
+				<div class="block__content">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="physical" class="sum" value="65" data-toggle="checkbox" checked onclick="return false" />
+							General Physical Exam ($65)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="deworm" class="sum" value="18" data-toggle="checkbox" />
+							Deworming Medication ($18)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="fleaTick" class="sum" value="22" data-toggle="checkbox" />
+							Flea/Tick Treatment ($22)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="insurance" class="sum" value="210" data-toggle="checkbox" />
+							30 Days of Pet Insurance ($210)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="purina" class="sum" value="14" data-toggle="checkbox" />
+							1 Bag of Purina Dog Food ($14)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="idTag" class="sum" value="26" data-toggle="checkbox" checked onclick="return false" />
+							Collar ID Tag ($26)
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" id="rabies" class="sum" value="28" data-toggle="checkbox" checked onclick="return false" />
+							Rabies Vaccination ($28)
+						</label>
+					</div>
+					$<span id="payment-total" style="text-decoration: underline">119</span>
+					<div class="collapse-footer">
+						<button class="btn btn-small ml-auto bg-orange">I'm Ready!</button>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer>
 			<p>PETS UNLEASHED <i class="fas fa-paw"></i> | All rights reserved | &copy;<span id="thisYear"></span></p>
 		</footer>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="../js/nav.js"></script>
 		<script src="../js/main.js"></script>
 	</body>

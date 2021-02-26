@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<base href="index.html">
+		<base href="index.html" />
 		<title>Pets Unleashed</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
@@ -13,6 +13,13 @@
 		<nav id="resultNav"></nav>
 		<div class="bg"></div>
 		<div class="container">
+			<div class="location-box">
+				<h3 class="location text-light">
+					Your Location: <span id="city"></span>, <span id="state"></span> (<span id="zip"></span>)<br />
+					View our <a href="locations.html">Locations!</a>
+				</h3>
+				<div id="details"></div>
+			</div>
 			<h4 class="sub-title">
 				Pets Unleashed has many animals to choose from. These include: <span class="viewAnimals"></span> Click an animal image below to learn more.
 			</h4>
@@ -43,6 +50,7 @@
 			<p>PETS UNLEASHED <i class="fas fa-paw"></i> | All rights reserved | &copy;<span id="thisYear"></span></p>
 		</footer>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/main.js"></script>
 	</body>
